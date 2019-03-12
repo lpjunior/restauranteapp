@@ -1,0 +1,56 @@
+﻿## Instalando as depedências
+
+# JQuery
+> npm install jquery --save
+
+Edite o arquivo angular.json e adicione o seguinte código no no array de scripts
+"node_modules/jquery/dist/jquery.min.js"
+
+# Font-Awesome
+
+> npm i font-awesome --save
+
+Edite o arquivo angular.json e adicione o seguinte código no no array de styles
+"node_modules/font-awesome/css/font-awesome.min.css"
+
+# Popper
+
+> npm i popper.js --save
+
+Edite o arquivo angular.json e adicione o seguinte código no no array de scripts abaixo do script jquery.min.js
+"node_modules/popper.js/dist/umd/popper.min.js",
+
+# Bootstrap
+
+> npm i bootstrap --save
+
+Edite o arquivo angular.json e adicione o seguinte código no no array de styles, acima do style.css
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+Edite o arquivo angular.json e adicione o seguinte código no no array de scripts abaixo do script jquery.min.js e acima do popper.min.js
+"node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+# Corrigindo aviso de Erro para plataformas diferentes do Mac OS (https://medium.com/@satawneh/npm-install-error-fsevents-in-ohter-mac-platforms-953101fc2797)
+ A solução simples é ignorar os eventos quando você está usando o sistema operacional Windows ou Linux
+
+> npm install --no-optional polymer-cli -g
+
+# AdminLTE
+
+> npm i admin-lte --save
+
+Edite o arquivo angular.json e adicione o seguinte código no no array de styles, abaixo do bootstrap.min.css
+"node_modules/admin-lte/dist/css/AdminLTE.min.css",
+"node_modules/admin-lte/dist/css/skins/skin-red.min.css",
+"node_modules/admin-lte/plugins/iCheck/flat/red.css"
+
+Edite o arquivo angular.json e adicione o seguinte código no no array de scripts abaixo do script popper.min.js
+"node_modules/admin-lte/dist/js/adminlte.min.js"
+
+
+# JSON SERVER
+> npm install -g json-server
+
+# Iniciando o serviço (json-server)
+
+> json-server db.json

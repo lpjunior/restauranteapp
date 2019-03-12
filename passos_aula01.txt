@@ -1,0 +1,45 @@
+## organizando o template
+
+#header
+1- Criar um componente header ng generate component header -is --spec=false (simplificado ng g c header --spec=false)
+2- Substituir o conteúdo do header.component.html pelo bloco do header
+3- incorporar a tag do header
+4- remover o css
+
+#home
+1- Criar um componente home ng generate component home -is --spec=false (simplificado ng g c home -is --spec=false)
+2- Substituir o conteúdo do home.component.html pelo bloco do home
+3- incorporar a tag do home
+5- remover a variavel do app.component
+
+#about
+1- Criar um componente about ng generate component about -is --spec=false (simplificado ng g c about -is --spec=false)
+2- Substituir o conteúdo do about.component.html pelo bloco do about
+3- incorporar a tag do about
+
+## Rotas (Navegação entre componentes)
+#app.routes.ts
+1- Criar um arquivo no nível do modulo principal (app.module.ts) e dar o nome de app.routes.ts
+2- Importar o modulo de rotas do Angular "@angular/router
+3- Criar uma array constante e exportar ela para uso em outros arquivos
+4- Definir no array as rotas
+5- Importar no modulo principal o arquivo de rotas usando RouterModule.forRoot(ROUTES)
+6- incorporar a tag de rotas router-outlet no html principal da aplicação
+7- Adicionar no arquivo header os links de rota ([routerLink]="['']")
+8- Utilizar a diretiva routerLinkActive para gerenciar a classe 'active' dos links
+
+#restaurants
+1- Criar um componente restaurants ng generate component restaurants -is --spec=false (simplificado ng g c restaurants -is --spec=false)
+2- Substituir o conteúdo do restaurants.component.html pelo bloco do restaurants
+3- incorporar o link pro component
+
+#restaurant
+1- Navegar até a pasta restaurants
+2- Criar um componente restaurant ng generate component restaurant -is --spec=false (simplificado ng g c restaurant -is --spec=false)
+3- Importar o decorator Input
+4- Declarar uma variavel restaurant e nela colocar o @Input()
+5- Criar o model de restaurant dentro da pasta restaurant
+6- Definir uma representação do dado
+
+3- incorporar o link pro component
+
